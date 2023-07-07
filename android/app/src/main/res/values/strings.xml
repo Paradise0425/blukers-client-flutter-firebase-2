@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Impression</string>
+
+    <string name="facebook_app_id">1539737539754486</string>
+    <string name="fb_login_protocol_scheme">fb1539737539754486</string>
+    <string name="facebook_client_token">727769b3e7619516d2fd341b20232c35</string>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25989559034",
+    "project_id": "blukers-development",
+    "storage_bucket": "blukers-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25989559034:android:ee8a9ab16f2dafc764cf43",
+        "android_client_info": {
+          "package_name": "com.blukers.client_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25989559034-jit1skch7hpli0in2r8lcn2tdvjhjeks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZnBA1yI928GjU892Q0_z3IrisrPB00CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25989559034-jit1skch7hpli0in2r8lcn2tdvjhjeks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
