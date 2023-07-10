@@ -636,14 +636,18 @@ Widget unread() {
                                   Container(
                                     height: 22,
                                     width: 22,
+                                    // decoration: BoxDecoration(
+                                    //   gradient: const LinearGradient(
+                                    //     colors: [
+                                    //       ColorRes.gradientColor,
+                                    //       ColorRes.containerColor
+                                    //     ],
+                                    //   ),
+                                    //   borderRadius: BorderRadius.circular(22),
+                                    // ),
                                     decoration: BoxDecoration(
-                                      gradient: const LinearGradient(
-                                        colors: [
-                                          ColorRes.gradientColor,
-                                          ColorRes.containerColor
-                                        ],
-                                      ),
-                                      borderRadius: BorderRadius.circular(22),
+                                      borderRadius: BorderRadius.circular(6),
+                                      color: ColorRes.blukersOrangeColor,
                                     ),
                                     child: Padding(
                                       padding: const EdgeInsets.only(top: 5),

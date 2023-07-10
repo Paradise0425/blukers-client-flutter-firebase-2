@@ -6,7 +6,8 @@ import 'package:blukers_client_app/localization/language/hindi.dart';
 import 'package:blukers_client_app/localization/language/spanish.dart';
 
 class LocalizationService extends Translations {
-  static const locale = Locale('en', 'US');
+  // static const locale = Locale('en', 'US');
+  static const locale = Locale('es', 'ES');
 
   static const fallbackLocale = Locale('tr', 'TR');
 

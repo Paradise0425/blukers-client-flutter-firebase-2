@@ -11,9 +11,20 @@ Widget backButton() {
     child: Container(
       height: 40,
       width: 40,
+      // decoration: BoxDecoration(
+      //   borderRadius: BorderRadius.circular(12),
+      //   border: Border.all(
+      //     color: ColorRes.containerColor,
+      //     width: 2,
+      //   ),
+      // ),
       decoration: BoxDecoration(
-        color: ColorRes.logoColor,
-        borderRadius: BorderRadius.circular(8),
+        // color: ColorRes.logoColor,
+        borderRadius: BorderRadius.circular(6),
+        border: Border.all(
+          color: ColorRes.containerColor,
+          width: 2,
+        ),
       ),
       child: const Icon(
         Icons.arrow_back_ios_new_rounded,

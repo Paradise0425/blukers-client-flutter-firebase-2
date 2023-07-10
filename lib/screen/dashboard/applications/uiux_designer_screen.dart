@@ -238,13 +238,12 @@ class SentScreen extends StatelessWidget {
                         margin: const EdgeInsets.symmetric(horizontal: 20),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          gradient: const LinearGradient(
-                            colors: [
-                              ColorRes.gradientColor,
-                              ColorRes.containerColor,
-                            ],
-                          ),
+                          borderRadius: BorderRadius.circular(6),
+                          color: ColorRes.blukersOrangeColor,
+                          // gradient: const LinearGradient(colors: [
+                          //   ColorRes.gradientColor,
+                          //   ColorRes.containerColor
+                          // ]),
                         ),
                         child: Text(Strings.joiningInterview,
                             style: appTextStyle(

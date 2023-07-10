@@ -34,7 +34,7 @@ class AppliesLogoScreen extends StatelessWidget {
           const SizedBox(height: 30),
           Center(
             child: Text("One place to track all your \njob applications",
-                style: GoogleFonts.playfairDisplay(
+                style: GoogleFonts.montserrat(
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
                     color: ColorRes.black),

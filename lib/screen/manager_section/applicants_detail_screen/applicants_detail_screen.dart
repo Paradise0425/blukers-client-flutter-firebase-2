@@ -230,11 +230,12 @@ class ApplicantsDetailScreen extends StatelessWidget {
                             child: Container(
                               height: 50,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                gradient: const LinearGradient(colors: [
-                                  ColorRes.gradientColor,
-                                  ColorRes.containerColor,
-                                ]),
+                                borderRadius: BorderRadius.circular(6),
+                                color: ColorRes.blukersOrangeColor,
+                                // gradient: const LinearGradient(colors: [
+                                //   ColorRes.gradientColor,
+                                //   ColorRes.containerColor
+                                // ]),
                               ),
                               child: Center(
                                 child: Text(
@@ -431,11 +432,12 @@ class ApplicantsDetailScreen extends StatelessWidget {
                     width: Get.width,
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      gradient: const LinearGradient(colors: [
-                        ColorRes.gradientColor,
-                        ColorRes.containerColor,
-                      ]),
+                      borderRadius: BorderRadius.circular(6),
+                      color: ColorRes.blukersOrangeColor,
+                      // gradient: const LinearGradient(colors: [
+                      //   ColorRes.gradientColor,
+                      //   ColorRes.containerColor
+                      // ]),
                     ),
                     child: Center(
                       child: Text(

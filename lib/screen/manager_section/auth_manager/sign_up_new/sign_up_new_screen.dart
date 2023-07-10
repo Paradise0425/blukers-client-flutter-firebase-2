@@ -36,10 +36,12 @@ class SignUpScreenM extends StatelessWidget {
                     Center(
                       child: Container(
                         alignment: Alignment.center,
+                        padding: const EdgeInsets.all(5.0),
                         height: 80,
                         width: 80,
                         decoration: BoxDecoration(
-                          color: ColorRes.logoColor,
+                          // color: ColorRes.logoColor,
+                          color: const Color.fromARGB(255, 238, 247, 253),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         child: const Image(
@@ -1203,11 +1205,12 @@ class SignUpScreenM extends StatelessWidget {
                               width: MediaQuery.of(context).size.width,
                               alignment: Alignment.center,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                gradient: const LinearGradient(colors: [
-                                  ColorRes.gradientColor,
-                                  ColorRes.containerColor
-                                ]),
+                                borderRadius: BorderRadius.circular(6),
+                                color: ColorRes.blukersOrangeColor,
+                                // gradient: const LinearGradient(colors: [
+                                //   ColorRes.gradientColor,
+                                //   ColorRes.containerColor
+                                // ]),
                               ),
                               child: Text(Strings.signUp,
                                   style: appTextStyle(
@@ -1245,7 +1248,7 @@ class SignUpScreenM extends StatelessWidget {
                                     spreadRadius: 0,
                                     blurRadius: 35),
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(6),
                               color: ColorRes.white),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1283,7 +1286,7 @@ class SignUpScreenM extends StatelessWidget {
                                       spreadRadius: 0,
                                       blurRadius: 35),
                                 ],
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(6),
                                 color: ColorRes.white),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,

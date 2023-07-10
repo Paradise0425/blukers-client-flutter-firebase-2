@@ -56,10 +56,12 @@ class _SigninScreenUState extends State<SigninScreenU> {
                         Center(
                           child: Container(
                             alignment: Alignment.center,
+                            padding: const EdgeInsets.all(5.0),
                             height: 80,
                             width: 80,
                             decoration: BoxDecoration(
-                              color: ColorRes.logoColor,
+                              // color: ColorRes.logoColor,
+                              color: const Color.fromARGB(255, 238, 247, 253),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: const Image(
@@ -71,7 +73,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                         Center(
                           child: Text(
                             Strings.signInToYourAccount,
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
                                 color: ColorRes.black),
@@ -87,7 +89,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                 padding: const EdgeInsets.only(left: .0),
                                 child: Text(
                                   Strings.email,
-                                  style: GoogleFonts.poppins(
+                                  style: GoogleFonts.montserrat(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 14,
                                     color: ColorRes.black.withOpacity(0.6),
@@ -132,7 +134,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                     hintText: 'Email',
                                     fillColor: Colors.transparent,
                                     filled: true,
-                                    hintStyle: GoogleFonts.poppins(
+                                    hintStyle: GoogleFonts.montserrat(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w500,
                                         color:
@@ -212,7 +214,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                             ),
                                             const SizedBox(width: 10),
                                             Text(controller.emailError,
-                                                style: GoogleFonts.poppins(
+                                                style: GoogleFonts.montserrat(
                                                     fontWeight: FontWeight.w400,
                                                     fontSize: 9,
                                                     color: ColorRes.starColor))
@@ -228,7 +230,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                           child: Row(
                             children: [
                               Text(Strings.password,
-                                  style: GoogleFonts.poppins(
+                                  style: GoogleFonts.montserrat(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: ColorRes.black.withOpacity(0.6))),
@@ -285,7 +287,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                       onPressed: controller.chang,
                                     ),
                                     filled: true,
-                                    hintStyle: GoogleFonts.poppins(
+                                    hintStyle: GoogleFonts.montserrat(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 15,
                                       color: ColorRes.black.withOpacity(0.15),
@@ -367,7 +369,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                           const SizedBox(width: 10),
                                           Text(
                                             controller.pwdError,
-                                            style: GoogleFonts.poppins(
+                                            style: GoogleFonts.montserrat(
                                                 fontSize: 9,
                                                 fontWeight: FontWeight.w400,
                                                 color: ColorRes.starColor),
@@ -427,7 +429,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                         ),
                                         Text(
                                           Strings.rememberMe,
-                                          style: GoogleFonts.poppins(
+                                          style: GoogleFonts.montserrat(
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: ColorRes.black),
@@ -454,15 +456,16 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                   width: MediaQuery.of(context).size.width,
                                   alignment: Alignment.center,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    gradient: const LinearGradient(colors: [
-                                      ColorRes.gradientColor,
-                                      ColorRes.containerColor
-                                    ]),
+                                    borderRadius: BorderRadius.circular(6),
+                                    color: ColorRes.blukersOrangeColor,
+                                    // gradient: const LinearGradient(colors: [
+                                    //   ColorRes.gradientColor,
+                                    //   ColorRes.containerColor
+                                    // ]),
                                   ),
                                   child: Text(
                                     Strings.signIn,
-                                    style: GoogleFonts.poppins(
+                                    style: GoogleFonts.montserrat(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w500,
                                         color: ColorRes.white),
@@ -482,7 +485,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                             },
                             child: Text(
                               Strings.forgotThePassword,
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.montserrat(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 15,
                                 color: ColorRes.containerColor,
@@ -495,7 +498,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                           child: InkWell(
                             onTap: () {},
                             child: Text(Strings.orContinueWith,
-                                style: GoogleFonts.poppins(
+                                style: GoogleFonts.montserrat(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w400,
                                     color: ColorRes.black)),
@@ -523,7 +526,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                           spreadRadius: 0,
                                           blurRadius: 35),
                                     ],
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(6),
                                     color: ColorRes.white),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -537,7 +540,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                     ),
                                     const SizedBox(width: 15),
                                     Text(Strings.facebook,
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.montserrat(
                                             fontWeight: FontWeight.w500,
                                             fontSize: 15,
                                             color: ColorRes.black)),
@@ -563,7 +566,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                           spreadRadius: 0,
                                           blurRadius: 35),
                                     ],
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(6),
                                     color: ColorRes.white),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -578,7 +581,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                     const SizedBox(width: 15),
                                     Text(
                                       Strings.google,
-                                      style: GoogleFonts.poppins(
+                                      style: GoogleFonts.montserrat(
                                           fontWeight: FontWeight.w500,
                                           fontSize: 15,
                                           color: ColorRes.black),
@@ -595,7 +598,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                           children: [
                             Text(
                               Strings.donTHaveAccount,
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.montserrat(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 15,
                                   color: ColorRes.black),
@@ -615,7 +618,7 @@ class _SigninScreenUState extends State<SigninScreenU> {
                                 },
                                 child: Text(
                                   Strings.signUp,
-                                  style: GoogleFonts.poppins(
+                                  style: GoogleFonts.montserrat(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 16,
                                       color: ColorRes.containerColor),

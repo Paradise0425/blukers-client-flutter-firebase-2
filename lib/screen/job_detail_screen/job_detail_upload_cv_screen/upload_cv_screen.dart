@@ -13,8 +13,10 @@ import 'package:blukers_client_app/utils/string.dart';
 // ignore: must_be_immutable
 class JobDetailsUploadCvScreen extends StatelessWidget {
   JobDetailsUploadCvScreen({Key? key}) : super(key: key);
+
   final JobDetailsUploadCvController controller =
       Get.put(JobDetailsUploadCvController());
+
   var args = Get.arguments;
 
   @override
@@ -248,6 +250,8 @@ class JobDetailsUploadCvScreen extends StatelessWidget {
                       const SizedBox(height: 50),
                       GestureDetector(
                         onTap: () {
+                          print('ON TAPPING APPLY');
+                          print(controller.pdfUrl);
                           SendNotificationModel notification =
                               SendNotificationModel(
                                   title:

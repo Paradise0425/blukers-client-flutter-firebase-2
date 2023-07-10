@@ -173,13 +173,12 @@ class _ResumeScreenState extends State<ResumeScreen> {
                       height: 50,
                       width: Get.width - 40,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        gradient: const LinearGradient(
-                          colors: [
-                            ColorRes.logoColor,
-                            ColorRes.containerColor,
-                          ],
-                        ),
+                        borderRadius: BorderRadius.circular(6),
+                        color: ColorRes.blukersOrangeColor,
+                        // gradient: const LinearGradient(colors: [
+                        //   ColorRes.gradientColor,
+                        //   ColorRes.containerColor
+                        // ]),
                       ),
                       child: Center(
                         child: Row(

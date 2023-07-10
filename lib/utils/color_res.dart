@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
 class ColorRes {
+  static const blukersBlueColor = Color.fromRGBO(30, 117, 187, 1); // #1E75BB
+  static const blukersOrangeColor = Color.fromRGBO(242, 100, 34, 1); // #F26422
+
   static const deleteColor = Color(0xffFCE6ED);
   static const white = Color(0xFFFFFFFF);
   static const black = Color(0xff000000);
   static const black2 = Color(0xff343740);
   static const lightBlack = Color(0xff232325);
-  static const containerColor = Color.fromARGB(255, 78, 149, 255);
-  static const gradientColor = Color.fromARGB(255, 158, 197, 255);
+  static const containerColor = Color.fromRGBO(30, 117, 187, 1);
+  static const gradientColor = Color.fromRGBO(113, 191, 255, 1);
   static const textColor = Color(0xff97A0AF);
-  static const logoColor = Color(0xffE2D3FE);
+  static const logoColor = Color.fromARGB(255, 211, 236, 254);
   static const starColor = Color(0xffDA1414);
   static const red = Color(0xffDF3727);
   static const invalidColor = Color(0xffFEEFEF);

@@ -504,12 +504,12 @@ class CreateVacanciesScreenM extends StatelessWidget {
                                         alignment: Alignment.center,
                                         decoration: BoxDecoration(
                                           borderRadius:
-                                              BorderRadius.circular(10),
-                                          gradient: const LinearGradient(
-                                              colors: [
-                                                ColorRes.gradientColor,
-                                                ColorRes.containerColor
-                                              ]),
+                                              BorderRadius.circular(6),
+                                          color: ColorRes.blukersOrangeColor,
+                                          // gradient: const LinearGradient(colors: [
+                                          //   ColorRes.gradientColor,
+                                          //   ColorRes.containerColor
+                                          // ]),
                                         ),
                                         child: Text(
                                           Strings.next,

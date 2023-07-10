@@ -151,12 +151,13 @@ class IntroductionScreen extends StatelessWidget {
                             const EdgeInsets.only(right: 18, left: 18, top: 10),
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
-                            Radius.circular(10),
+                            Radius.circular(6),
                           ),
-                          gradient: LinearGradient(colors: [
-                            ColorRes.gradientColor,
-                            ColorRes.containerColor,
-                          ]),
+                          color: ColorRes.blukersOrangeColor,
+                          // gradient: LinearGradient(colors: [
+                          //   ColorRes.gradientColor,
+                          //   ColorRes.containerColor,
+                          // ]),
                         ),
                         child: Text(
                           Strings.getStarted,

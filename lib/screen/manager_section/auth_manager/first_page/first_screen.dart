@@ -43,24 +43,42 @@ class FirstPageScreenM extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: Get.height * 0.12),
-              Text(
-                Strings.logo,
-                style: appTextStyle(
-                    fontSize: 44,
-                    fontWeight: FontWeight.w600,
-                    color: ColorRes.black),
+              // SizedBox(height: Get.height * 0.12),
+              // Text(
+              //   Strings.logo,
+              //   style: appTextStyle(
+              //       fontSize: 44,
+              //       fontWeight: FontWeight.w600,
+              //       color: ColorRes.black),
+              // ),
+              // SizedBox(height: Get.height * 0.12),
+              Container(
+                height: Get.height * 0.15,
+                width: Get.height * 0.15,
+                // padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  // shape: BoxShape.circle,
+                  color: ColorRes.logoColor,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                clipBehavior: Clip.hardEdge,
+                child: SizedBox(
+                  height: 30,
+                  width: 30,
+                  child: Image.asset(AssetRes.person2),
+                ),
               ),
-              SizedBox(height: Get.height * 0.12),
+              SizedBox(height: Get.height * 0.03),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
                   textAlign: TextAlign.center,
-                  Strings.firstScreenSentences,
+                  Strings.firstScreenSentencesM,
                   style: appTextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 26,
-                    color: ColorRes.black.withOpacity(0.7),
+                    fontSize: 20,
+                    // color: ColorRes.black.withOpacity(0.7),
+                    color: ColorRes.blukersOrangeColor,
                   ),
                 ),
               ),
@@ -76,7 +94,7 @@ class FirstPageScreenM extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(6),
                       color: ColorRes.containerColor),
                   child: Text(
                     Strings.createAccount,
@@ -92,7 +110,7 @@ class FirstPageScreenM extends StatelessWidget {
                 Strings.alreadyHaveAccount,
                 style: appTextStyle(
                   fontWeight: FontWeight.w400,
-                  fontSize: 18,
+                  fontSize: 16,
                   color: ColorRes.black.withOpacity(0.6),
                 ),
               ),
@@ -111,7 +129,7 @@ class FirstPageScreenM extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(6),
                     border: Border.all(color: ColorRes.containerColor),
                   ),
                   child: Text(Strings.signIn,
@@ -146,8 +164,8 @@ class FirstPageScreenM extends StatelessWidget {
                             ..onTap = () async {
                               // ignore: deprecated_member_use
                               if (!await launch(
-                                  "https://www.termsfeed.com/live/588c37bc-3594-490a-be8b-d9409af52df7")) {
-                                throw 'Could not launch :https://www.termsfeed.com/live/588c37bc-3594-490a-be8b-d9409af52df7';
+                                  "https://www.blukers.com/app-terms-of-service")) {
+                                throw 'Could not launch :https://www.blukers.com/app-terms-of-service';
                               }
                             })
                     ],

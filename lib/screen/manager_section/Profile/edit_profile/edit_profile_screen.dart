@@ -40,10 +40,11 @@ class EditProfileScreen extends StatelessWidget {
               child: Text(
                 Strings.editProfile,
                 style: appTextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    height: 1,
-                    color: ColorRes.black),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                  height: 1,
+                  color: ColorRes.blukersOrangeColor,
+                ),
               ),
             ),
             const Spacer(),
@@ -596,13 +597,14 @@ class EditProfileScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: const LinearGradient(colors: [
-                                    ColorRes.gradientColor,
-                                    ColorRes.containerColor
-                                  ]),
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: ColorRes.blukersOrangeColor,
+                                  // gradient: const LinearGradient(colors: [
+                                  //   ColorRes.gradientColor,
+                                  //   ColorRes.containerColor
+                                  // ]),
                                 ),
-                                child: Text("Save Changes",
+                                child: Text(Strings.saveChanges,
                                     style: appTextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w500,

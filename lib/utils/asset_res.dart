@@ -18,7 +18,9 @@ class AssetRes {
   static const pdfIcon = '${icons}pdf_icon.png';
   static const userIcon = '${icons}userIcon.png';
   static const wantJob = '${icons}want_job.png';
+  static const wantJob2 = '${icons}want_job_2.png';
   static const person = '${icons}person.png';
+  static const person2 = '${icons}person_2.png';
   static const cloud = '${icons}cloud.png';
   static const chatSend = "${icons}chatSend.png";
   static const applies = "${icons}applies.png";

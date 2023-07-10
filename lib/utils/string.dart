@@ -1,13 +1,29 @@
 import 'package:get/get_utils/get_utils.dart';
 
-class Strings   {
+class Strings {
+  ///-----------------------introScreen-------------------------------------------
+  static String introPage1Title = "introPage1Title".tr;
+  static String introPage1Subitle = "introPage1Subtitle".tr;
+  static String introPage2Title = "introPage2Title".tr;
+  static String introPage2Subitle = "introPage2Subtitle".tr;
+  static String introPage3Title = "introPage3Title".tr;
+  static String introPage3Subitle = "introPage3Subtitle".tr;
+
+  static String introPage1TitleM = "introPage1TitleM".tr;
+  static String introPage1SubitleM = "introPage1SubtitleM".tr;
+  static String introPage2TitleM = "introPage2TitleM".tr;
+  static String introPage2SubitleM = "introPage2SubtitleM".tr;
+  static String introPage3TitleM = "introPage3TitleM".tr;
+  static String introPage3SubitleM = "introPage3SubtitleM".tr;
+
   ///-----------------------firstScreen-------------------------------------------
   static String logo = "logo".tr;
   static String jobSeeker = "jobSeeker".tr;
 
   ///-------------------------sentences--------------------------------------------
-  static String firstScreenSentences = 'firstScreenSentences'.tr;
-  static String screenSentences = 'screenSentences'.tr;
+  static String firstScreenSentences = "firstScreenSentences".tr;
+  static String firstScreenSentencesM = "firstScreenSentencesM".tr;
+  static String screenSentences = "screenSentences".tr;
 
   /// -------------------- Home Page -------------------------- ///
 
@@ -235,4 +251,6 @@ class Strings   {
   static String formGallery = "formGallery".tr;
   static String takePhoto = "takePhoto".tr;
   static String editProfile = "editProfile".tr;
+  static String saveChanges = "saveChanges".tr;
+  static String areYouSureYouWantToSignOut = "areYouSureYouWantToSignOut".tr;
 }

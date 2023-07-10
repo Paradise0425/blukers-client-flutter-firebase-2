@@ -85,11 +85,12 @@ class UpdateJobScreen extends StatelessWidget {
                 height: 44,
                 width: 164,
                 decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [ColorRes.gradientColor, ColorRes.containerColor],
-                  ),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: ColorRes.white),
+                  borderRadius: BorderRadius.circular(6),
+                  color: ColorRes.blukersOrangeColor,
+                  // gradient: const LinearGradient(colors: [
+                  //   ColorRes.gradientColor,
+                  //   ColorRes.containerColor
+                  // ]),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(13.0),

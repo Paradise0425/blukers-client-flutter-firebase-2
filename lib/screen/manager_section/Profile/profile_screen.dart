@@ -40,10 +40,11 @@ class ProfileScreen extends StatelessWidget {
                 child: Text(
                   Strings.profile,
                   style: appTextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      height: 1,
-                      color: ColorRes.black),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    height: 1,
+                    color: ColorRes.blukersOrangeColor,
+                  ),
                 ),
               ),
               const Spacer(),
@@ -52,8 +53,12 @@ class ProfileScreen extends StatelessWidget {
                 height: 40,
                 width: 40,
                 decoration: BoxDecoration(
-                  color: ColorRes.logoColor,
-                  borderRadius: BorderRadius.circular(10),
+                  // color: ColorRes.logoColor,
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(
+                    color: ColorRes.blukersBlueColor,
+                    width: 2,
+                  ),
                 ),
                 child: InkWell(
                   onTap: () {
@@ -439,13 +444,12 @@ class ProfileScreen extends StatelessWidget {
                                         alignment: Alignment.center,
                                         decoration: BoxDecoration(
                                           borderRadius:
-                                              BorderRadius.circular(10),
-                                          gradient: const LinearGradient(
-                                            colors: [
-                                              ColorRes.gradientColor,
-                                              ColorRes.containerColor
-                                            ],
-                                          ),
+                                              BorderRadius.circular(6),
+                                          color: ColorRes.blukersOrangeColor,
+                                          // gradient: const LinearGradient(colors: [
+                                          //   ColorRes.gradientColor,
+                                          //   ColorRes.containerColor
+                                          // ]),
                                         ),
                                         child: Text(
                                           Strings.edit,

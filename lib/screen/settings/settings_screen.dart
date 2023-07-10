@@ -410,7 +410,7 @@ class SettingsScreenU extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  "Are you sure want to logout?",
+                  Strings.areYouSureYouWantToSignOut,
                   style: appTextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 14,
@@ -427,16 +427,16 @@ class SettingsScreenU extends StatelessWidget {
                         },
                         child: Container(
                           height: 50,
-                          width: 160,
+                          width: 140,
                           decoration: BoxDecoration(
                               color: ColorRes.white,
                               borderRadius:
-                                  const BorderRadius.all(Radius.circular(10)),
+                                  const BorderRadius.all(Radius.circular(6)),
                               border:
                                   Border.all(color: ColorRes.containerColor)),
                           child: Center(
                               child: Text(
-                            "Cancel",
+                            Strings.cancel,
                             style: appTextStyle(
                               color: ColorRes.containerColor,
                               fontSize: 18,
@@ -446,7 +446,7 @@ class SettingsScreenU extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 2),
                     InkWell(
                       onTap: () async {
                         final GoogleSignIn googleSignIn = GoogleSignIn();
@@ -463,17 +463,18 @@ class SettingsScreenU extends StatelessWidget {
                       },
                       child: Container(
                         height: 50,
-                        width: 160,
+                        width: 140,
                         decoration: const BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            ColorRes.gradientColor,
-                            ColorRes.containerColor,
-                          ]),
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          // gradient: LinearGradient(colors: [
+                          //   ColorRes.gradientColor,
+                          //   ColorRes.containerColor,
+                          // ]),
+                          color: Colors.red,
+                          borderRadius: BorderRadius.all(Radius.circular(6)),
                         ),
                         child: Center(
                           child: Text(
-                            "Yes, Logout",
+                            Strings.logout,
                             style: appTextStyle(
                               color: ColorRes.white,
                               fontSize: 18,

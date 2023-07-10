@@ -157,7 +157,7 @@ class SearchJobScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 18),
               child: Text(
                 Strings.yourMostRecentSearches,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
                   color: ColorRes.black,
@@ -194,7 +194,7 @@ class SearchJobScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Supervisor,Gurgaon/Guru...",
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w400,
                                 color: ColorRes.black),
@@ -204,7 +204,7 @@ class SearchJobScreen extends StatelessWidget {
                           ),
                           Text(
                             "2 new",
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w400,
                                 color: ColorRes.containerColor),

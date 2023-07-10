@@ -111,11 +111,11 @@ class HomePageNewScreenU extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                'Make the most of Job Seeker by creating your job profile ',
-                style: GoogleFonts.playfairDisplay(
+                'Make the most of Blukers by creating your job profile ',
+                style: GoogleFonts.montserrat(
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
-                    color: ColorRes.black),
+                    color: ColorRes.blukersOrangeColor),
               ),
             ),
             const SizedBox(height: 10),
@@ -196,7 +196,7 @@ class HomePageNewScreenU extends StatelessWidget {
                     width: 95,
                     decoration: BoxDecoration(
                       color: ColorRes.containerColor,
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(6),
                     ),
                     child: Center(
                       child: Text(
@@ -220,7 +220,7 @@ class HomePageNewScreenU extends StatelessWidget {
                     width: 95,
                     decoration: BoxDecoration(
                         color: ColorRes.logoColor,
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(6)),
                     child: Center(
                       child: Text(
                         Strings.login,
@@ -250,121 +250,123 @@ class HomePageNewScreenU extends StatelessWidget {
               height: 10,
             ),
             const SizedBox(height: 15),
-            const Center(
-              child: Image(
-                image: AssetImage(
-                  AssetRes.home2,
-                ),
-                height: 150,
-              ),
-            ),
-            const Center(
-              child: Text(
-                "Find your dream job",
-                style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18,
-                    color: ColorRes.black),
-              ),
-            ),
-            const SizedBox(height: 13),
-            GetBuilder<HomePageNewController>(
-                id: "popup",
-                builder: (con) {
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 18.0, left: 18, right: 18, bottom: 8),
-                        child: AdvancedSearch(
-                          clearSearchEnabled: true,
-                          singleItemHeight: 40,
-                          hintText: 'Enter designation, companies',
-                          hintTextColor: Colors.black.withOpacity(0.5),
-                          autoListing: true,
-                          unSelectedTextColor: Colors.black.withOpacity(0.5),
-                          maxElementsToDisplay: 10,
-                          onItemTap: (int index, String value) {
-                            controller.skills = value;
-                          },
-                          searchItems:
-                              PrefService.getList(PrefKeys.allDesignation),
-                        ),
-                      ),
-                      (controller.skillError != "")
-                          ? Padding(
-                              padding: const EdgeInsets.only(left: 18.0),
-                              child: SizedBox(
-                                child: Text(
-                                  controller.skillError,
-                                  style: const TextStyle(
-                                      fontSize: 12, color: Colors.red),
-                                ),
-                              ),
-                            )
-                          : const SizedBox(),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            bottom: 18.0, left: 18, right: 18),
-                        child: AdvancedSearch(
-                          clearSearchEnabled: true,
-                          singleItemHeight: 40,
-                          hintText: 'Enter location',
-                          hintTextColor: Colors.black.withOpacity(0.5),
-                          autoListing: true,
-                          maxElementsToDisplay: 10,
-                          onItemTap: (int index, String value) {
-                            controller.location = value;
-                          },
-                          searchItems:
-                              PrefService.getList(PrefKeys.allCountryData),
-                        ),
-                      ),
-                      (controller.locationError != "")
-                          ? Padding(
-                              padding: const EdgeInsets.only(left: 18.0),
-                              child: SizedBox(
-                                child: Text(
-                                  controller.locationError,
-                                  style: const TextStyle(
-                                      fontSize: 12, color: Colors.red),
-                                ),
-                              ),
-                            )
-                          : const SizedBox(),
-                    ],
-                  );
-                }),
-            InkWell(
-              onTap: controller.searchJob,
-              child: Center(
-                child: Container(
-                  margin: const EdgeInsets.only(top: 15),
-                  height: 36,
-                  width: 119,
-                  decoration: BoxDecoration(
-                    color: ColorRes.containerColor,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: Text(
-                      Strings.searchJobs,
-                      style: const TextStyle(
-                          color: ColorRes.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 30),
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 1),
-              color: ColorRes.logoColor,
-              height: 10,
-            ),
+            // const Center(
+            //   child: Image(
+            //     image: AssetImage(
+            //       AssetRes.home2,
+            //     ),
+            //     height: 150,
+            //   ),
+            // ),
+            // const Center(
+            //   child: Text(
+            //     "Find your dream job",
+            //     style: TextStyle(
+            //         fontWeight: FontWeight.w600,
+            //         fontSize: 18,
+            //         color: ColorRes.black),
+            //   ),
+            // ),
+            // const SizedBox(height: 13),
+            //
+            // GetBuilder<HomePageNewController>(
+            //     id: "popup",
+            //     builder: (con) {
+            //       return Column(
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: [
+            //           Padding(
+            //             padding: const EdgeInsets.only(
+            //                 top: 18.0, left: 18, right: 18, bottom: 8),
+            //             child: AdvancedSearch(
+            //               clearSearchEnabled: true,
+            //               singleItemHeight: 40,
+            //               hintText: 'Enter designation, companies',
+            //               hintTextColor: Colors.black.withOpacity(0.5),
+            //               autoListing: true,
+            //               unSelectedTextColor: Colors.black.withOpacity(0.5),
+            //               maxElementsToDisplay: 10,
+            //               onItemTap: (int index, String value) {
+            //                 controller.skills = value;
+            //               },
+            //               searchItems:
+            //                   PrefService.getList(PrefKeys.allDesignation),
+            //             ),
+            //           ),
+            //           (controller.skillError != "")
+            //               ? Padding(
+            //                   padding: const EdgeInsets.only(left: 18.0),
+            //                   child: SizedBox(
+            //                     child: Text(
+            //                       controller.skillError,
+            //                       style: const TextStyle(
+            //                           fontSize: 12, color: Colors.red),
+            //                     ),
+            //                   ),
+            //                 )
+            //               : const SizedBox(),
+            //           Padding(
+            //             padding: const EdgeInsets.only(
+            //                 bottom: 18.0, left: 18, right: 18),
+            //             child: AdvancedSearch(
+            //               clearSearchEnabled: true,
+            //               singleItemHeight: 40,
+            //               hintText: 'Enter location',
+            //               hintTextColor: Colors.black.withOpacity(0.5),
+            //               autoListing: true,
+            //               maxElementsToDisplay: 10,
+            //               onItemTap: (int index, String value) {
+            //                 controller.location = value;
+            //               },
+            //               searchItems:
+            //                   PrefService.getList(PrefKeys.allCountryData),
+            //             ),
+            //           ),
+            //           (controller.locationError != "")
+            //               ? Padding(
+            //                   padding: const EdgeInsets.only(left: 18.0),
+            //                   child: SizedBox(
+            //                     child: Text(
+            //                       controller.locationError,
+            //                       style: const TextStyle(
+            //                           fontSize: 12, color: Colors.red),
+            //                     ),
+            //                   ),
+            //                 )
+            //               : const SizedBox(),
+            //         ],
+            //       );
+            //     }),
+            //
+            // InkWell(
+            //   onTap: controller.searchJob,
+            //   child: Center(
+            //     child: Container(
+            //       margin: const EdgeInsets.only(top: 15),
+            //       height: 36,
+            //       width: 119,
+            //       decoration: BoxDecoration(
+            //         color: ColorRes.containerColor,
+            //         borderRadius: BorderRadius.circular(10),
+            //       ),
+            //       child: Center(
+            //         child: Text(
+            //           Strings.searchJobs,
+            //           style: const TextStyle(
+            //               color: ColorRes.white,
+            //               fontWeight: FontWeight.w500,
+            //               fontSize: 14),
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // const SizedBox(height: 30),
+            // Container(
+            //   margin: const EdgeInsets.symmetric(horizontal: 1),
+            //   color: ColorRes.logoColor,
+            //   height: 10,
+            // ),
             const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(12.0),

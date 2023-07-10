@@ -39,6 +39,7 @@ class ManagerApplicationScreen extends StatelessWidget {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     logo(),
                     InkWell(
@@ -54,8 +55,12 @@ class ManagerApplicationScreen extends StatelessWidget {
                         height: 40,
                         width: 40,
                         decoration: BoxDecoration(
-                          color: ColorRes.logoColor,
-                          borderRadius: BorderRadius.circular(12),
+                          // color: ColorRes.logoColor,
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(
+                            color: ColorRes.blukersBlueColor,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -70,7 +75,7 @@ class ManagerApplicationScreen extends StatelessWidget {
                   child: Text(
                     Strings.applications,
                     style: appTextStyle(
-                        color: ColorRes.black,
+                        color: ColorRes.blukersOrangeColor,
                         fontSize: 20,
                         fontWeight: FontWeight.w500),
                   ),

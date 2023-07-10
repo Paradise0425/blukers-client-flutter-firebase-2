@@ -948,7 +948,7 @@ class UpdateVacanciesRequirementsScreen extends StatelessWidget {
                                                                                   ),
                                                                                   Text(
                                                                                     "Remove",
-                                                                                    style: GoogleFonts.poppins(fontSize: 12, color: ColorRes.black),
+                                                                                    style: GoogleFonts.montserrat(fontSize: 12, color: ColorRes.black),
                                                                                   )
                                                                                 ],
                                                                               ),
@@ -1018,13 +1018,12 @@ class UpdateVacanciesRequirementsScreen extends StatelessWidget {
                                         alignment: Alignment.center,
                                         decoration: BoxDecoration(
                                           borderRadius:
-                                              BorderRadius.circular(10),
-                                          gradient: const LinearGradient(
-                                            colors: [
-                                              ColorRes.gradientColor,
-                                              ColorRes.containerColor,
-                                            ],
-                                          ),
+                                              BorderRadius.circular(6),
+                                          color: ColorRes.blukersOrangeColor,
+                                          // gradient: const LinearGradient(colors: [
+                                          //   ColorRes.gradientColor,
+                                          //   ColorRes.containerColor
+                                          // ]),
                                         ),
                                         child: Text(Strings.updateVacancy,
                                             style: appTextStyle(

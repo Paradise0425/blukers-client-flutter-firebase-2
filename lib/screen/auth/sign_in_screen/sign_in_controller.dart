@@ -95,9 +95,12 @@ class SignInScreenController extends GetxController {
     }
   }
 
-  void signInWithEmailAndPassword(
-      {required String email, required String password}) async {
+  void signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
     loading.value = true;
+
     await fireStore
         .collection("Auth")
         .doc("User")

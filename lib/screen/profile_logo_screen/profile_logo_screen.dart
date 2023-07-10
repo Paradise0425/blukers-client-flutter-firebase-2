@@ -35,7 +35,7 @@ class ProfileLogoScreen extends StatelessWidget {
             const SizedBox(height: 30),
             Center(
               child: Text("Get discovered by recruiters\n from top companies",
-                  style: GoogleFonts.playfairDisplay(
+                  style: GoogleFonts.montserrat(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
                       color: ColorRes.black),

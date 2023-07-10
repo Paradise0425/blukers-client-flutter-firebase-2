@@ -39,8 +39,12 @@ class SettingScreenM extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 10),
                     margin: const EdgeInsets.only(left: 14),
                     decoration: BoxDecoration(
-                      color: ColorRes.logoColor,
-                      borderRadius: BorderRadius.circular(10),
+                      // color: ColorRes.logoColor,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: ColorRes.blukersBlueColor,
+                        width: 2,
+                      ),
                     ),
                     child: const Align(
                       alignment: Alignment.center,
@@ -57,7 +61,7 @@ class SettingScreenM extends StatelessWidget {
                     child: Text(
                       Strings.settings,
                       style: appTextStyle(
-                          color: ColorRes.black,
+                          color: ColorRes.blukersOrangeColor,
                           fontSize: 20,
                           fontWeight: FontWeight.w500),
                     ),
@@ -85,7 +89,11 @@ class SettingScreenM extends StatelessWidget {
                           width: 55,
                           decoration: BoxDecoration(
                             color: ColorRes.logoColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(6),
+                            // border: Border.all(
+                            //   color: ColorRes.blukersBlueColor,
+                            //   width: 2,
+                            // ),
                           ),
                           child: const Icon(
                             Icons.visibility,
@@ -138,7 +146,11 @@ class SettingScreenM extends StatelessWidget {
                           width: 55,
                           decoration: BoxDecoration(
                             color: ColorRes.logoColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(6),
+                            // border: Border.all(
+                            //   color: ColorRes.blukersBlueColor,
+                            //   width: 2,
+                            // ),
                           ),
                           child: const Icon(
                             Icons.language,
@@ -184,7 +196,11 @@ class SettingScreenM extends StatelessWidget {
                       padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
                         color: ColorRes.deleteColor,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(6),
+                        // border: Border.all(
+                        //   color: ColorRes.starColor,
+                        //   width: 2,
+                        // ),
                       ),
                       child: const Image(
                         image: AssetImage(
@@ -233,7 +249,7 @@ Future settingModalBottomSheet(context) {
               ),
               const SizedBox(height: 20),
               Text(
-                "Are you sure want to logout?",
+                Strings.areYouSureYouWantToSignOut,
                 style: appTextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14,
@@ -251,15 +267,15 @@ Future settingModalBottomSheet(context) {
                       },
                       child: Container(
                         height: 50,
-                        width: 160,
+                        width: 140,
                         decoration: BoxDecoration(
                             color: ColorRes.white,
                             borderRadius:
-                                const BorderRadius.all(Radius.circular(10)),
+                                const BorderRadius.all(Radius.circular(6)),
                             border: Border.all(color: ColorRes.containerColor)),
                         child: Center(
                             child: Text(
-                          "Cancel",
+                          Strings.cancel,
                           style: appTextStyle(
                             color: ColorRes.containerColor,
                             fontSize: 18,
@@ -269,7 +285,7 @@ Future settingModalBottomSheet(context) {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 2),
                   InkWell(
                     onTap: () async {
                       final GoogleSignIn googleSignIn = GoogleSignIn();
@@ -298,17 +314,18 @@ Future settingModalBottomSheet(context) {
                     },
                     child: Container(
                       height: 50,
-                      width: 160,
+                      width: 140,
                       decoration: const BoxDecoration(
-                        gradient: LinearGradient(colors: [
-                          ColorRes.gradientColor,
-                          ColorRes.containerColor,
-                        ]),
-                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        // gradient: LinearGradient(colors: [
+                        //   ColorRes.gradientColor,
+                        //   ColorRes.containerColor,
+                        // ]),
+                        color: Colors.red,
+                        borderRadius: BorderRadius.all(Radius.circular(6)),
                       ),
                       child: Center(
                         child: Text(
-                          "Yes, Logout",
+                          Strings.logout,
                           style: appTextStyle(
                             color: ColorRes.white,
                             fontSize: 18,

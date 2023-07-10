@@ -36,7 +36,7 @@ class InboxLogoScreen extends StatelessWidget {
             Center(
               child: Text(
                   "Here is where recruiters \ndirectly reach you for jobs",
-                  style: GoogleFonts.playfairDisplay(
+                  style: GoogleFonts.montserrat(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
                       color: ColorRes.black),

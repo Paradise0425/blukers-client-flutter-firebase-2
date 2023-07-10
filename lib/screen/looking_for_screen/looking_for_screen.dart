@@ -14,8 +14,13 @@ class LookingForScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(LookingForYouScreenController());
     return Scaffold(
+      // appBar: AppBar(
+      //   // backgroundColor: mBackgroundColor,
+      //   elevation: 0,
+      //   centerTitle: true,
+      // ),
       resizeToAvoidBottomInset: false,
-      backgroundColor: const Color(0xffF8F8F8),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Column(
         children: [
           Container(
@@ -33,7 +38,8 @@ class LookingForScreen extends StatelessWidget {
               width: Get.width,
               height: Get.height * 0.4,
               decoration: const BoxDecoration(
-                color: Color(0xffffffff),
+                // color: Color.fromARGB(255, 255, 147, 107),
+                color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(50),
                   topRight: Radius.circular(50),
@@ -42,22 +48,25 @@ class LookingForScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    height: Get.height * 0.06,
-                  ),
-                  SizedBox(
-                      height: Get.height * 0.045,
-                      width: Get.height * 0.045,
-                      child: Image.asset(
-                        AssetRes.userIcon,
-                        fit: BoxFit.fill,
-                      )),
+                  // SizedBox(
+                  //   height: Get.height * 0.06,
+                  // ),
+                  // SizedBox(
+                  //     height: Get.height * 0.045,
+                  //     width: Get.height * 0.045,
+                  //     child: Image.asset(
+                  //       AssetRes.userIcon,
+                  //       fit: BoxFit.fill,
+                  //     )),
                   SizedBox(
                     height: Get.height * 0.02,
                   ),
                   Text(
                     Strings.whatAreYouLookingFor,
-                    style: appTextStyle(color: ColorRes.black, fontSize: 14),
+                    style: appTextStyle(
+                      color: const Color.fromRGBO(242, 100, 34, 1),
+                      fontSize: 20,
+                    ),
                   ),
                   SizedBox(
                     height: Get.height * 0.035,
@@ -71,17 +80,23 @@ class LookingForScreen extends StatelessWidget {
                         InkWell(
                           onTap: () => controller.onChangeWantJobChoice(),
                           child: Obx(
-                            () => lookingForYouBox(AssetRes.wantJob,
-                                "iWantJob".tr, controller.isJob.value),
+                            () => lookingForYouBox(
+                              // AssetRes.wantJob,
+                              AssetRes.wantJob2,
+                              "iWantJob".tr,
+                              controller.isJob.value,
+                            ),
                           ),
                         ),
                         InkWell(
                           onTap: () => controller.onChangeEmployeeChoice(),
                           child: Obx(
                             () => lookingForYouBox(
-                                AssetRes.person,
-                                "iWantEmployee".tr,
-                                controller.isEmployee.value),
+                              // AssetRes.person,
+                              AssetRes.person2,
+                              "iWantEmployee".tr,
+                              controller.isEmployee.value,
+                            ),
                           ),
                         ),
                       ],

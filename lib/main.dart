@@ -23,6 +23,10 @@ import 'package:blukers_client_app/screen/organization_profile_screen/organizati
 import 'package:blukers_client_app/screen/see_details/see_details_screen.dart';
 import 'package:blukers_client_app/screen/splashScreen/splash_screen.dart';
 import 'package:blukers_client_app/screen/update_vacancies_requirements/update_vacancies_requirements_screen.dart';
+
+import 'package:blukers_client_app/screen/intro/introducation_screen.dart';
+import 'package:blukers_client_app/screen/manager_section/intro/introducation_screen.dart';
+
 import 'package:blukers_client_app/service/pref_services.dart';
 import 'package:blukers_client_app/utils/app_res.dart';
 import 'package:blukers_client_app/utils/pref_keys.dart';
@@ -50,9 +54,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "jobSeek",
+      title: "Blukers",
       theme: ThemeData(
+        // primarySwatch: Color.fromRGBO(30, 117, 187, 1),
+        // primarySwatch: Colors.blue[700],
         primarySwatch: Colors.blue,
+        fontFamily: 'Montserrat',
       ),
       debugShowCheckedModeBanner: false,
       locale: LocalizationService.locale,
@@ -60,7 +67,6 @@ class MyApp extends StatelessWidget {
       translations: LocalizationService(),
       home: const SplashScreen(),
       //const SplashScreen(),
-
       initialRoute: "/",
       getPages: [
         GetPage(
@@ -108,6 +114,9 @@ class MyApp extends StatelessWidget {
             name: AppRes.updateVacanciesRequirementScreen,
             page: () => const UpdateVacanciesRequirementsScreen()),
         GetPage(name: AppRes.firstScreen, page: () => FirstScreen()),
+        //
+        GetPage(name: AppRes.introScreen, page: () => IntroductionScreen()),
+        GetPage(name: AppRes.introScreenM, page: () => IntroductionScreenM()),
       ],
     );
   }

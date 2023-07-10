@@ -171,9 +171,14 @@ Widget recentPeopleBox({bool? homeScreen, String? position}) {
                                           height: 40,
                                           width: 40,
                                           decoration: BoxDecoration(
-                                              color: ColorRes.logoColor,
-                                              borderRadius:
-                                                  BorderRadius.circular(8)),
+                                            // color: ColorRes.logoColor,
+                                            borderRadius:
+                                                BorderRadius.circular(6),
+                                            border: Border.all(
+                                              color: ColorRes.blukersBlueColor,
+                                              width: 2,
+                                            ),
+                                          ),
                                           child: const GradientIcon(
                                             Icons.chat,
                                             20,
@@ -241,14 +246,15 @@ Widget recentPeopleBox({bool? homeScreen, String? position}) {
                                           "doc": contro.userData[i]['resumeUrl']
                                         }),
                                     child: Container(
-                                      width: 135,
+                                      width: 120,
                                       height: 35,
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        gradient: const LinearGradient(colors: [
-                                          ColorRes.logoColor,
-                                          ColorRes.containerColor,
-                                        ]),
+                                        borderRadius: BorderRadius.circular(6),
+                                        color: ColorRes.blukersBlueColor,
+                                        // gradient: const LinearGradient(colors: [
+                                        //   ColorRes.gradientColor,
+                                        //   ColorRes.containerColor
+                                        // ]),
                                       ),
                                       child: Center(
                                         child: Text(
@@ -260,19 +266,21 @@ Widget recentPeopleBox({bool? homeScreen, String? position}) {
                                       ),
                                     ),
                                   ),
+                                  // const SizedBox(width: 2),
                                   InkWell(
                                     onTap: () => Get.toNamed(
                                         AppRes.seeDetailsScreen,
                                         arguments: contro.userData[i]),
                                     child: Container(
-                                      width: 135,
+                                      width: 120,
                                       height: 35,
                                       decoration: BoxDecoration(
                                           borderRadius:
-                                              BorderRadius.circular(10),
+                                              BorderRadius.circular(6),
                                           border: Border.all(
-                                              color: ColorRes.containerColor,
-                                              width: 2),
+                                            color: ColorRes.blukersBlueColor,
+                                            width: 2,
+                                          ),
                                           color: ColorRes.white),
                                       child: Center(
                                         child: Text(

@@ -31,11 +31,12 @@ Widget tipsForYouSection() {
         margin: const EdgeInsets.symmetric(horizontal: 18),
         height: 150,
         decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(15)),
-          gradient: const LinearGradient(colors: [
-            ColorRes.gradientColor,
-            ColorRes.containerColor,
-          ]),
+          borderRadius: const BorderRadius.all(Radius.circular(6)),
+          color: ColorRes.blukersOrangeColor,
+          // gradient: const LinearGradient(colors: [
+          //   ColorRes.gradientColor,
+          //   ColorRes.containerColor,
+          // ]),
           boxShadow: [
             BoxShadow(
                 offset: const Offset(6, 6),

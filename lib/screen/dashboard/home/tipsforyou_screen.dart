@@ -60,11 +60,12 @@ class TipsForYouScreen extends StatelessWidget {
                         height: 176,
                         decoration: BoxDecoration(
                           borderRadius:
-                              const BorderRadius.all(Radius.circular(15)),
-                          gradient: const LinearGradient(colors: [
-                            ColorRes.gradientColor,
-                            ColorRes.containerColor,
-                          ]),
+                              const BorderRadius.all(Radius.circular(6)),
+                          color: ColorRes.blukersOrangeColor,
+                          // gradient: const LinearGradient(colors: [
+                          //   ColorRes.gradientColor,
+                          //   ColorRes.containerColor,
+                          // ]),
                           boxShadow: [
                             BoxShadow(
                                 offset: const Offset(6, 6),

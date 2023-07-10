@@ -437,13 +437,12 @@ class SeeDetailsScreen extends StatelessWidget {
                           height: 50,
                           width: Get.width,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            gradient: const LinearGradient(
-                              colors: [
-                                ColorRes.logoColor,
-                                ColorRes.containerColor,
-                              ],
-                            ),
+                            borderRadius: BorderRadius.circular(6),
+                            color: ColorRes.blukersOrangeColor,
+                            // gradient: const LinearGradient(colors: [
+                            //   ColorRes.gradientColor,
+                            //   ColorRes.containerColor
+                            // ]),
                           ),
                           child: Center(
                             child: Row(
@@ -469,7 +468,7 @@ class SeeDetailsScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 50),
                     ],
                   ),
                 ),

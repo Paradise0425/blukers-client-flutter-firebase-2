@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Text(
                           Strings.jobRecommendation,
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
                             color: ColorRes.black,
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                               Get.toNamed(AppRes.jobRecommendationScreen),
                           child: Text(
                             Strings.seeAll,
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,
                                 color: ColorRes.containerColor),

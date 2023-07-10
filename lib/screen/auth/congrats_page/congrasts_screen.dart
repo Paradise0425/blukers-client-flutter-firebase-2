@@ -54,11 +54,12 @@ class CongratsScreen extends StatelessWidget {
                 width: 339,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  gradient: const LinearGradient(colors: [
-                    ColorRes.gradientColor,
-                    ColorRes.containerColor,
-                  ]),
+                  borderRadius: BorderRadius.circular(6),
+                  color: ColorRes.blukersOrangeColor,
+                  // gradient: const LinearGradient(colors: [
+                  //   ColorRes.gradientColor,
+                  //   ColorRes.containerColor
+                  // ]),
                 ),
                 child: InkWell(
                   onTap: () {

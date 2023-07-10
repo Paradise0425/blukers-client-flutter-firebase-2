@@ -7,6 +7,7 @@ import 'package:blukers_client_app/common/widgets/back_button.dart';
 import 'package:blukers_client_app/screen/auth/sign_in_screen/sign_in_screen.dart';
 import 'package:blukers_client_app/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:blukers_client_app/screen/first_page/first_controller.dart';
+import 'package:blukers_client_app/utils/app_style.dart';
 import 'package:blukers_client_app/utils/asset_res.dart';
 import 'package:blukers_client_app/utils/color_res.dart';
 import 'package:blukers_client_app/utils/string.dart';
@@ -54,25 +55,43 @@ class FirstScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 110),
-              // Get.height * 0.12),
-              Text(
-                Strings.logo,
-                style: GoogleFonts.poppins(
-                  fontSize: 44,
-                  fontWeight: FontWeight.w600,
+              // const SizedBox(height: 110),
+              // // Get.height * 0.12),
+              // Text(
+              //   Strings.logo,
+              //   style: GoogleFonts.montserrat(
+              //     fontSize: 44,
+              //     fontWeight: FontWeight.w600,
+              //   ),
+              // ),
+              // SizedBox(height: Get.height * 0.12),
+              Container(
+                height: Get.height * 0.15,
+                width: Get.height * 0.15,
+                // padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  // shape: BoxShape.circle,
+                  color: ColorRes.logoColor,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                clipBehavior: Clip.hardEdge,
+                child: SizedBox(
+                  height: 30,
+                  width: 30,
+                  child: Image.asset(AssetRes.wantJob2),
                 ),
               ),
-              SizedBox(height: Get.height * 0.12),
+              SizedBox(height: Get.height * 0.03),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
                   textAlign: TextAlign.center,
                   Strings.firstScreenSentences,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.montserrat(
                     fontWeight: FontWeight.w400,
-                    fontSize: 26,
-                    color: ColorRes.black.withOpacity(0.7),
+                    fontSize: 20,
+                    // color: ColorRes.black.withOpacity(0.7),
+                    color: ColorRes.blukersOrangeColor,
                   ),
                 ),
               ),
@@ -92,11 +111,11 @@ class FirstScreen extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(6),
                       color: ColorRes.containerColor),
                   child: Text(
                     Strings.createAccount,
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.montserrat(
                         fontWeight: FontWeight.w500,
                         fontSize: 18,
                         color: ColorRes.white),
@@ -106,9 +125,9 @@ class FirstScreen extends StatelessWidget {
               SizedBox(height: Get.height * 0.03),
               Text(
                 Strings.alreadyHaveAccount,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w400,
-                  fontSize: 18,
+                  fontSize: 16,
                   color: ColorRes.black.withOpacity(0.6),
                 ),
               ),
@@ -127,11 +146,11 @@ class FirstScreen extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(6),
                     border: Border.all(color: ColorRes.containerColor),
                   ),
                   child: Text(Strings.signIn,
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.montserrat(
                           fontWeight: FontWeight.w500,
                           fontSize: 18,
                           color: ColorRes.containerColor)),
@@ -139,20 +158,21 @@ class FirstScreen extends StatelessWidget {
               ),
               SizedBox(height: Get.height * 0.03),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
                     children: <TextSpan>[
                       TextSpan(
-                          text:
-                              'By creating an account, you are agreeing\n                to our',
-                          style: GoogleFonts.poppins(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w400,
-                              color: ColorRes.textColor)),
+                        text: Strings.screenSentences,
+                        style: appTextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400,
+                            color: ColorRes.textColor),
+                      ),
                       TextSpan(
                           text: Strings.termsOfService,
-                          style: GoogleFonts.poppins(
+                          style: appTextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                             color: ColorRes.black,
@@ -161,8 +181,8 @@ class FirstScreen extends StatelessWidget {
                             ..onTap = () async {
                               // ignore: deprecated_member_use
                               if (!await launch(
-                                  "https://www.termsfeed.com/live/588c37bc-3594-490a-be8b-d9409af52df7")) {
-                                throw 'Could not launch :https://www.termsfeed.com/live/588c37bc-3594-490a-be8b-d9409af52df7';
+                                  "https://www.blukers.com/app-terms-of-service")) {
+                                throw 'Could not launch :https://www.blukers.com/app-terms-of-service';
                               }
                             })
                     ],
